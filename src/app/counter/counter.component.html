@@ -1,0 +1,15 @@
+<h1 class="counter-text">{{counter}}</h1>
+<div class="increment-box">
+  <button class="minus" (click)="decrement()">-</button>
+  <button class="plus" (click)="increment()">+</button>
+</div>
+<div class="input-box">
+  <div>
+    <p>Wartość startowa</p>
+    <input type="text" [(ngModel)]="counter">
+  </div>
+  <div>
+    <p>Wartość przeskoku</p>
+    <input type="text" [(ngModel)]="incrementValue">
+  </div>
+</div>
